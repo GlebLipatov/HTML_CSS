@@ -32,39 +32,49 @@
     display: flex;
     padding-top: 40px;
     padding-bottom: 162px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .content__main_block {
     width: 522px;
-    margin-right: 20px;
 }
 
 .content__title {
-    font-size: 60px;
+    font-size: 56px;
     line-height: 70px;
     font-weight: bold;
-    font-family: Gilroy-Bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .content__text {
     font-size: 20px;
-    font-family: Gilroy-Bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
     line-height: 24px;
     color: #888888;
     padding-top: 17px;
-    padding-bottom: 18px;
+}
+
+.content__buttons {
+    padding-top: 37px;
+    width: 305px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .content__button_orange {
-    margin-right: 36px;
+    background: #F25822;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    color: white;
+    box-shadow: 4%;
     background-image: url(..\images\Button.svg);
 }
 
 .content__button_text {
-    margin-right: 36px;
     border: 0;
     font-size: 15px;
     color: #888888;
