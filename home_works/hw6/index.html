@@ -26,7 +26,42 @@
                 </div>
                 <div class="header_menu">
                     <div class="header_menu__drop">
-                        <img src="img/header_drop_menu.svg" alt="Выпадающее меню">
+                        <a href="#" class="header_menu__drop_link">
+                            <img src="img/header_drop_menu.svg" alt="Выпадающее меню">
+                        </a>
+                        <div class="drop_menu">
+                            <p class="drop_menu_title">MENU</p>
+                            <div class="drop_menu__item">
+                                <p class="drop_menu__item_title">MAN</p>
+                                <ul class="drop_menu__item__list">
+                                    <li class="drop_menu__item__list_item">Accessories</li>
+                                    <li class="drop_menu__item__list_item">Bags</li>
+                                    <li class="drop_menu__item__list_item">Denim</li>
+                                    <li class="drop_menu__item__list_item">T-Shirts</li>
+                                </ul>
+                            </div>
+                            <div class="drop_menu__item">
+                                <p class="drop_menu__item_title">WOMAN</p>
+                                <ul class="drop_menu__item__list">
+                                    <li class="drop_menu__item__list_item">Accessories</li>
+                                    <li class="drop_menu__item__list_item">Jackets & Coats</li>
+                                    <li class="drop_menu__item__list_item">Polos</li>
+                                    <li class="drop_menu__item__list_item">T-Shirts</li>
+                                    <li class="drop_menu__item__list_item">Shirts</li>
+                                </ul>
+                            </div>
+                            <div class="drop_menu__item">
+                                <p class="drop_menu__item_title">KIDS</p>
+                                <ul class="drop_menu__item__list">
+                                    <li class="drop_menu__item__list_item">Accessories</li>
+                                    <li class="drop_menu__item__list_item">Jackets & Coats</li>
+                                    <li class="drop_menu__item__list_item">Polos</li>
+                                    <li class="drop_menu__item__list_item">T-Shirts</li>
+                                    <li class="drop_menu__item__list_item">Shirts</li>
+                                    <li class="drop_menu__item__list_item">Bags</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <a href="#" class="header_menu__login">
                         <img src="img/header_login.svg" alt="Вход в личный кабинет">
@@ -60,29 +95,39 @@
                 <div class="catalog__item catalog__item_upper">
                     <img class="catalog_img" src="img/women.png" alt="Для женщин">
                     <a href="#" class="catalog__item__link">
-                        <p class="catalog__item__message">30% OFF</p>
-                        <p class="catalog__item__title">FOR WOMEN</p>
+                        <div class="catalog_item_text">
+                            <p class="catalog__item__message">30% OFF</p>
+                            <p class="catalog__item__title">FOR WOMEN</p>
+                        </div>
                     </a>
                 </div>
                 <div class="catalog__item catalog__item_upper">
                     <img class="catalog_img" src="img/man.jpg" alt="Для мужчин">
                     <a href="#" class="catalog__item__link">
-                        <p class="catalog__item__message">HOT DEAL</p>
-                        <p class="catalog__item__title">FOR MEN</p>
+                        <div class="catalog_item_text">
+                            <p class="catalog__item__message">HOT DEAL</p>
+                            <p class="catalog__item__title">FOR MEN</p>
+                        </div>
+
                     </a>
                 </div>
                 <div class="catalog__item catalog__item_upper">
                     <img class="catalog_img" src="img/kids.jpg" alt="Для детей">
                     <a href="#" class="catalog__item__link">
-                        <p class="catalog__item__message">NEW ARRIVALS</p>
-                        <p class="catalog__item__title">FOR KIDS</p>
+                        <div class="catalog_item_text">
+                            <p class="catalog__item__message">NEW ARRIVALS</p>
+                            <p class="catalog__item__title">FOR KIDS</p>
+                        </div>
+
                     </a>
                 </div>
                 <div class="catalog__item catalog__item_bottom">
-                    <img class="catalog_img" src="img/accesories.jpg" alt="Аксессуары">
+                    <img class="catalog_img catalog_img_bottom" src="img/accesories.jpg" alt="Аксессуары">
                     <a href="#" class="catalog__item__link">
-                        <p class="catalog__item__message">LUXIROUS & TRENDY</p>
-                        <p class="catalog__item__title">ACCESORIES</p>
+                        <div class="catalog_item_text">
+                            <p class="catalog__item__message">LUXIROUS & TRENDY</p>
+                            <p class="catalog__item__title">ACCESORIES</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -95,9 +140,16 @@
                 </div>
                 <div class="features__content">
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_upper_left.jpg" alt="Бородач в куртке">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_upper_left.jpg"
+                                alt="<Бородач с хваостом>">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -106,9 +158,16 @@
                         </div>
                     </div>
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_upper_center.png" alt="Женщина в черном кривляется">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_upper_center.png"
+                                alt="Женщина кривляется">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -117,9 +176,15 @@
                         </div>
                     </div>
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_upper_right.png" alt="Скромный парень в шляпе">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_upper_right.png" alt="Дрищ в шляпе">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -128,9 +193,16 @@
                         </div>
                     </div>
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_bottom_left.png" alt="Бородач с больной спиной">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_bottom_left.png"
+                                alt="Бородач с больной спиной">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -139,9 +211,16 @@
                         </div>
                     </div>
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_bottom_center.png" alt="Серьезная женщина в голубом жакете">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_bottom_center.png"
+                                alt="Типа серьезная фифа">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -150,9 +229,15 @@
                         </div>
                     </div>
                     <div class="features__content__item">
-                        <a href="#" class="content__details__link">
-                            <img src="img/features_bottom_right.png" alt="Женщина кривляется">
-                        </a>
+                        <div class="content__details__link__wrapper">
+                            <img class="content__details__img" src="img/features_bottom_right.png" alt="Обезьянка">
+                            <div class="content__hover__wrapper">
+                                <div class="content__details__link">
+                                    <img src="img/cart.svg" alt="bag">
+                                    <a href="#" class="content__add_to_cart">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="content__details">
                             <h3 class="content__details__title">ELLERY X M'O CAPSULE</h3>
                             <p class="content__details__text">Known for her sculptural takes on traditional tailoring,
@@ -163,6 +248,62 @@
                 </div>
                 <div class="features__footer">
                     <button class="features__button">Browse All Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services__wrapper">
+                <div class="services__item">
+                    <img class="services__icon" src="img/subscribe_delivery.svg" alt="Free Delivery">
+                    <p class="service_title">Free Delivery</p>
+                    <p class="service_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/subscribe_sales.svg" alt="Sales & discounts">
+                    <p class="service_title">Sales & discounts</p>
+                    <p class="service_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="img/subscribe_quality.svg" alt="Quality assurance">
+                    <p class="service_title">Quality assurance</p>
+                    <p class="service_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__wrapper">
+                <div class="subscribe__inner_left">
+                    <img src="img/subscribe_photo.png" alt="some photo">
+                    <p class="subscribe__inner_left__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</p>
+                </div>
+                <div class="subscribe__inner_right">
+                    <p class="subscribe__inner_right__title">
+                        SUBSCRIBE
+                        <span class="subscribe__inner_right__title_text">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </span>
+                    </p>
+
+                    <form action="">
+                        <input class="subscribe__input" value="   Enter Your Email" type="text" id="subscribe_input"
+                            name="name" size="10" />
+                        <button class="subscribe__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_wrapper">
+                <p class="copy">© 2022 Brand All Rights Reserved.</p>
+                <div class="social">
+                    <img src="img/social_face.svg" alt="facebook">
+                    <img src="img/social_insta.svg" alt="instagram">
+                    <img src="img/social_p.svg" alt="P">
+                    <img src="img/social_tw.svg" alt="twitter">
                 </div>
             </div>
         </div>
